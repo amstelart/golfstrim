@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>NTH start project</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet" media="screen">
+
+	<script>
+	  // Маркер работающего javascript
+	  document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+	  document.addEventListener('DOMContentLoaded', function(){
+	    if (window.isMobile !== undefined) {
+	      // console.log(isMobile);
+	      if(isMobile.any) {
+	        var rootClasses = ' is-mobile';
+	        for (key in isMobile) {
+	          if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+	          if(typeof isMobile[key] === 'object' && key !== 'other') {
+	            for (type in isMobile[key]) {
+	              if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+	            }
+	          }
+	        }
+	        document.documentElement.className += rootClasses;
+	      }
+	    }
+	    else {
+	      console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+	    }
+	  });
+
+	</script>
+
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+	<div class="page__inner">
+
+		<div class="page__content">
+			<header class="page-header" role="banner">
+				<!-- header top -->
+				<div class="header-top">
+					<div class="header-top__inner">
+							<div class="header-top__info">
+								<p>Время работы: <strong>Пн-Пт</strong> с 9:00 до 18:00; <strong>Сб</strong> с 9:00 до 14:00</p>
+								<p><a href="cantacts.html">Схема поезда</a></p>
+								<p>
+									<span class="header-contacts">Адрес: <strong>Дружининская, 83</strong></span>
+									<span class="header-contacts">Телефон: <strong>+7 (4712) 306-026</strong></span>
+									<span class="header-contacts">E-mail: <strong><a href=""mailto:info@golfstrim46.ru>info@golfstrim46.ru</a></strong></span>
+								</p>
+							</div>
+					</div>
+				</div>
+				<!-- end header top -->
+				<!-- header nav -->
+				<div class="header-nav">
+					<div class="header-nav__inner">
+						<!-- main nav -->
+						<nav id="main-nav" class="main-nav" role="navigation">
+							<a class="logo" href="index.html">
+								<img src="img/logo.png" alt="Гольфстрим">
+							</a>
+							<div id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></div>
+							<ul class="main-nav__list">
+								<li class="main-nav__item main-nav__item--active">
+									<a href="index.html" class="main-nav__link">
+										Главная
+									</a>
+								</li>
+								<li class="main-nav__item">
+									<a href="services-page.html" class="main-nav__link">
+										Услуги
+									</a>
+								</li>
+								<li class="main-nav__item">
+									<a href="projects-page.html" class="main-nav__link">
+										Наши проекты
+									</a>
+								</li>
+								<li class="main-nav__item">
+									<a href="plumbing-page.html" class="main-nav__link">
+										Сантехника
+									</a>
+								</li>
+								<li class="main-nav__item">
+									<a href="mounting-page.html" class="main-nav__link">
+										Монтаж
+									</a>
+								</li>
+								<li class="main-nav__item">
+									<a href="partners-page.html" class="main-nav__link">
+										Партнеры
+									</a>
+								</li>
+								<li class="main-nav__item">
+									<a href="contacts-page.html" class="main-nav__link">
+										Контакты
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- end main nav -->
+					</div>
+				</div>
+				<!-- end header nav -->
+			</header>
+
+
+			<main role="main" class="main main__services">
+				<div class="main__inner">
+					<h1 class="main__title">Услуги</h1>
+					<div class="main__services-card-wrapper">
+						<a href="#" class="main__services-card">
+							<div class="services__blur-bg" style="background-image: url(img/dubl-bg-01.jpg);"></div>
+							<span href="#">Проектирование систем отопления</span>
+						</a>
+						<a href="#" class="main__services-card">
+							<div class="services__blur-bg" style="background-image: url(img/dubl-bg-02.jpg);"></div>
+							<span href="#">Консультация</span>
+						</a>
+						<a href="#" class="main__services-card">
+							<div class="services__blur-bg" style="background-image: url(img/dubl-bg-01.jpg);"></div>
+							<span href="#">Монтаж</span>
+						</a>
+						<a href="#" class="main__services-card">
+							<div class="services__blur-bg" style="background-image: url(img/dubl-bg-02.jpg);"></div>
+							<span>Сервисное обслуживание</span>
+						</a>
+					</div>
+				</div>
+			</main>
+
+			<section class="feedback">
+				<div class="feedback__blur-bg"></div>
+				<div class="feedback__inner">
+					<h2 class="feedback__title">Подберем индивидуальное решение системы отопления!</h2>
+					<p class="feedback__text">Для получения подробной информации звоните нам: +7 (4712) 306-026 или оставьте заявку</p>
+					<form action="https://httpbin.org/post" class="form form--order form--order-revers" method="post">
+							<label class="field-text">
+								<!-- <span class="field-text__name">Текстовое поле</span> -->
+								<span class="field-text__input-wrap">
+									<input class="field-text__input" type="text" placeholder="Имя">
+								</span>
+							</label>
+							<label class="field-text">
+								<!-- <span class="field-text__name">Текстовое поле</span> -->
+								<span class="field-text__input-wrap">
+									<input class="field-text__input" type="text" placeholder="Телефон">
+								</span>
+							</label>
+							<div class="field-actions">
+								<!-- <div class="field-actions__text">* — обязательные поля</div> -->
+								<button class="btn btn--orange">Заказать смету</button>
+							</div>
+							<div class="field-checkbox">
+								<label class="field-checkbox__name">
+									<input class="field-checkbox__input" type="checkbox" checked="">
+									<span class="field-checkbox__name-text">Я даю согласие на обработку персональных данных </span>
+								</label>
+								<a href="#">Политика конфиденциальности</a>
+							</div>
+					</form>
+				</div>
+			</section>
+
+
+		</div>
+
+		<div class="page__footer-wrapper">
+			<footer class="page-footer" role="contentinfo">
+				<div class="footer-info">
+					<div class="footer-info__inner">
+						<div class="footer-info__block footer-info__block--logo">
+							<a class="logo" href="index.html">
+								<img src="img/logo.png" alt="Гольфстрим">
+							</a>
+						</div>
+						<div class="footer-info__block footer-info__block--contacts">
+							<p>Адрес: <strong>Дружининская, 83</strong></p>
+							<p>Телефон: <strong>+7 (4712) 306-026</strong></p>
+							<p>E-mail: <strong><a href="mailto:info@golfstrim46.ru">info@golfstrim46.ru</a></strong></p>
+						</div>
+						<div class="footer-info__block footer-info__block--menu">
+								<ul class="footer-info__list">
+									<li class="footer-info__list-item"><a class="footer-info__list-link" href="#">Главная</a></li>
+									<li class="footer-info__list-item footer-info__list-item--active"><a class="footer-info__list-link" href="#">Услуги</a></li>
+									<li class="footer-info__list-item"><a class="footer-info__list-link" href="#">Наши проекты</a></li>
+									<li class="footer-info__list-item"><a class="footer-info__list-link" href="#">Сантехника</a></li>
+									<li class="footer-info__list-item"><a class="footer-info__list-link" href="#">Монтаж</a></li>
+									<li class="footer-info__list-item"><a class="footer-info__list-link" href="#">Партнеры</a></li>
+									<li class="footer-info__list-item"><a class="footer-info__list-link" href="#">Контакты</a></li>
+								</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="footer-copyright__inner">
+						<p>Гольфстрим © 2017</p>
+						<p>Разработка — <a href="http://www.2showbiz.ru/">Showbiz Studio</a></p>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+
+	</div>
+
+	
+	<div id="equipment-modal" class="modal modal--equipment" tabindex="-1" role="dialog">
+	  <div class="modal__dialog" role="document">
+	    <div class="modal__content">
+	      <div class="modal__header">
+	        <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+	        <h4 class="modal__title">Котлы</h4>
+	      </div>
+	      <div class="modal__body">
+	        <p>Данная комплектация представлена электрическим котлом (Protherm Скат) или газовым настенным двухконтурным котлом (Protherm Пантера). Система радиаторного отопления выполнена из панельных стальных радиаторов с боковым подключением (Buderus) или из алюминиевых радиаторов (Rommer). Термостатическая арматура (Giacomini, Stout), трубопроводы выполнены из полипропилена (Kalde) в виде двухтрубной схемы.
+	          Данная комплектация представлена электрическим котлом (Protherm Скат) или газовым настенным двухконтурным котлом (Protherm Пантера). Система радиаторного отопления выполнена из панельных стальных радиаторов с боковым подключением (Buderus) или из алюминиевых радиаторов (Rommer). Термостатическая арматура (Giacomini, Stout), трубопроводы выполнены из полипропилена (Kalde) в виде двухтрубной схемы.</p>
+	      </div>
+	      <div class="modal__footer">
+	        <!-- <button type="button" class="btn" data-dismiss="modal">Закрыть</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div id="calculation-modal" class="modal modal--calculation" tabindex="-1" role="dialog">
+	  <div class="modal__dialog" role="document">
+	    <div class="modal__content">
+	      <div class="modal__header">
+	        <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+	        <h4 class="modal__title">100 м<sup>2</sup> - 200 м<sup>2</sup></h4>
+	        <h4 class="modal__sub-title">Комплектация: <strong>Эконом</strong></h4>
+	      </div>
+	      <div class="modal__body">
+	        <p>Данная комплектация представлена электрическим котлом (Protherm Скат) или газовым настенным двухконтурным котлом (Protherm Пантера). Система радиаторного отопления выполнена из панельных стальных радиаторов с боковым подключением (Buderus) или из алюминиевых радиаторов (Rommer). Термостатическая арматура (Giacomini, Stout), трубопроводы выполнены из полипропилена (Kalde) в виде двухтрубной схемы.</p>
+	      </div>
+	      <div class="modal__footer">
+	        <div class="calculation-form-wrap">
+						<form action="https://httpbin.org/post" class="form form--order" method="post">
+								<h2 class="calculation-form__title">Закажите бесплатный выезд специалиста</h2>
+								<label class="field-text">
+									<span class="field-text__input-wrap">
+										<input class="field-text__input" type="text" placeholder="Телефон">
+									</span>
+								</label>
+								<div class="field-actions">
+									<button class="btn btn--orange">Заказать смету</button>
+								</div>
+								<div class="field-checkbox">
+									<label class="field-checkbox__name">
+										<input class="field-checkbox__input" type="checkbox" checked="">
+										<span class="field-checkbox__name-text">Я даю согласие на обработку персональных данных </span>
+									</label>
+									<a href="#">Политика конфиденциальности</a>
+								</div>
+						</form>
+					</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.3.1.1.min.js"><\/script>')</script>
+
+	<script src="https://maps.api.2gis.ru/2.0/loader.js"></script>
+	<script src="js/script.min.js"></script>
+
+</body>
+</html>
