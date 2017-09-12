@@ -1,0 +1,19 @@
+// В этом файле должны быть стили для БЭМ-блока test-block, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.test-block {
+
+	$block-name:                &; // #{$block-name}__element {}
+
+	&__image {
+		width: 100px;
+		height: 100px;
+		margin: auto;
+		border: 1px solid #000;
+		img {
+			object-fit: fill;
+		}
+	}
+
+}

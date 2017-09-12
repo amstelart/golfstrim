@@ -1,0 +1,49 @@
+// В этом файле должны быть стили для БЭМ-блока feedback, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.feedback {
+
+	$block-name:                &; // #{$block-name}__element {}
+	// background-color: #000;
+	background-image: url("../img/feedback-bg.jpg");
+	background-position: center center;
+	background-size: cover;
+	padding: 10px 0;
+	&__inner {
+		@include container;
+	}
+	&__title {
+		text-align: center;
+		color: #fff;
+	}
+	&__text {
+		color: #fff;
+		text-align: center;
+	}
+	&__card-wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__card {
+		background: #fff;
+		border-radius: $border-radius;
+		padding: 40px 25px;
+		text-align: center;
+		width: calc(25% - 15px);
+		margin-bottom: 30px;
+	}
+	.form--order {
+		max-width: 900px;
+		.field-text,
+		.field-actions {
+			flex-basis: 32%;
+			min-width: 32%;
+			@media (max-width: $screen-md) {
+				flex-basis: 100%;
+				min-width: 100%;
+			}
+		}
+	}
+
+}

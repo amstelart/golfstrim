@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>NTH start project</title>
+	<meta name="description" content="">
+	@@include('_include/page_head.html')
+</head>
+
+<body>
+
+	<div class="page__inner">
+
+		<div class="page__content">
+
+			@@include('blocks/page-header/page-header.html')
+
+			<main role="main" class="main main__partners">
+				<div class="main__inner">
+					<h1 class="main__title">Партнёры</h1>
+					<div class="main__partners-block">
+						<div class="main__partners-logo">
+							<img src="img/partners-logo-01.png" alt="Baxi">
+						</div>
+						<div class="main__partners-body">
+							<h3 class="main__partners-title">BAXI</h3>
+							<p>Совместно со своими региональными партнерами BAXI развивает в России сеть фирменных магазинов BAXI. Целью этой деятельности является популяризации торговой марки BAXI в России, предоставления качественного клиентского сервиса и подробной информации о продукции BAXI.</p>
+						</div>
+					</div>
+					<div class="main__partners-block">
+						<div class="main__partners-logo">
+							<img src="img/partners-logo-02.png" alt="Jaga">
+						</div>
+						<div class="main__partners-body">
+							<h3 class="main__partners-title">Jaga</h3>
+							<p>Конвекторы Jaga - надежное отопительное оборудование, выпуск которого осуществляет всемирно известная компания. Качество выпускаемой продукции постоянно повышается, несмотря на стабильность работы устройств Jaga и высокий спрос покупателей. В настоящее время на европейском рынке отопительного оборудования конвекторы марки Jaga занимают передовые позиции. На отечественном рынке устройства являются не менее востребованными.</p>
+						</div>
+					</div>
+					<div class="main__partners-block">
+						<div class="main__partners-logo">
+							<img src="img/partners-logo-01.png" alt="Baxi">
+						</div>
+						<div class="main__partners-body">
+							<h3 class="main__partners-title">BAXI</h3>
+							<p>Совместно со своими региональными партнерами BAXI развивает в России сеть фирменных магазинов BAXI. Целью этой деятельности является популяризации торговой марки BAXI в России, предоставления качественного клиентского сервиса и подробной информации о продукции BAXI.</p>
+						</div>
+					</div>
+					<div class="main__partners-block">
+						<div class="main__partners-logo">
+							<img src="img/partners-logo-02.png" alt="Jaga">
+						</div>
+						<div class="main__partners-body">
+							<h3 class="main__partners-title">Jaga</h3>
+							<p>Конвекторы Jaga - надежное отопительное оборудование, выпуск которого осуществляет всемирно известная компания. Качество выпускаемой продукции постоянно повышается, несмотря на стабильность работы устройств Jaga и высокий спрос покупателей. В настоящее время на европейском рынке отопительного оборудования конвекторы марки Jaga занимают передовые позиции. На отечественном рынке устройства являются не менее востребованными.</p>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<section class="feedback">
+				<div class="feedback__blur-bg"></div>
+				<div class="feedback__inner">
+					<h2 class="feedback__title">Подберем индивидуальное решение системы отопления!</h2>
+					<p class="feedback__text">Для получения подробной информации звоните нам: +7 (4712) 306-026 или оставьте заявку</p>
+					<form action="https://httpbin.org/post" class="form form--order form--order-revers" method="post">
+							<label class="field-text">
+								<!-- <span class="field-text__name">Текстовое поле</span> -->
+								<span class="field-text__input-wrap">
+									<input class="field-text__input" type="text" placeholder="Имя">
+								</span>
+							</label>
+							<label class="field-text">
+								<!-- <span class="field-text__name">Текстовое поле</span> -->
+								<span class="field-text__input-wrap">
+									<input class="field-text__input" type="text" placeholder="Телефон">
+								</span>
+							</label>
+							<div class="field-actions">
+								<!-- <div class="field-actions__text">* — обязательные поля</div> -->
+								<button class="btn btn--orange">Заказать смету</button>
+							</div>
+							<div class="field-checkbox">
+								<label class="field-checkbox__name">
+									<input class="field-checkbox__input" type="checkbox" checked="">
+									<span class="field-checkbox__name-text">Я даю согласие на обработку персональных данных </span>
+								</label>
+								<a href="#">Политика конфиденциальности</a>
+							</div>
+					</form>
+				</div>
+			</section>
+
+
+		</div>
+
+		<div class="page__footer-wrapper">
+			@@include('blocks/page-footer/page-footer.html')
+		</div>
+
+	</div>
+
+	@@include('_include/page_bottom.html')
+</body>
+</html>

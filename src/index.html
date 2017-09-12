@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>NTH start project</title>
+	<meta name="description" content="">
+	@@include('_include/page_head.html')
+</head>
+
+<body>
+
+	<div class="page__inner">
+
+		<div class="page__content">
+
+			@@include('blocks/page-header/page-header.html')
+
+			<section class="intro">
+				<div class="intro__inner">
+					<form action="https://httpbin.org/post" class="form intro-form--order" method="post">
+							<h3 class="form__title">Предельно точно рассчитаем стоимость системы отопления</h3>
+							<p class="form__text">Поможем подобрать оборудование, необходимое для вашей системы отопления</p>
+							<label class="field-text">
+								<span class="field-text__input-wrap">
+									<input class="field-text__input" type="text" placeholder="Имя">
+								</span>
+							</label>
+							<label class="field-text">
+								<span class="field-text__input-wrap">
+									<input class="field-text__input" type="text" placeholder="Телефон">
+								</span>
+							</label>
+							<p class="form__text form__text--bottom">У вас есть список необходимого оборудования?</p>
+							<div class="field-file">
+								<!-- <div class="field-file__name">Выбор файлов</div> -->
+								<label class="field-file__input-wrap">
+									<input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" multiple>
+									<span class="field-file__name-text" data-button-text="Прикрепить файл">Ничего не выбрано</span>
+								</label>
+							</div>
+							<div class="field-actions">
+								<button class="btn btn--orange">Заказать смету</button>
+							</div>
+							<div class="field-checkbox">
+								<label class="field-checkbox__name">
+									<input class="field-checkbox__input" type="checkbox" checked="">
+									<span class="field-checkbox__name-text">Я даю согласие на обработку персональных данных </span>
+								</label>
+								<a href="#">Политика конфиденциальности</a>
+							</div>
+					</form>
+				</div>
+			</section>
+
+			<section class="calculation">
+				<div class="calculation__inner">
+					<h2 class="calculation__title">Рассчитайте стоимость системы отопления для вашего коттеджа</h2>
+					<div class="calculation-card-wrapper">
+
+						<div class="calculation-card">
+							<div class="calculation-card__area">100 м<sup>2</sup> - 200 м<sup>2</sup></div>
+							<div class="calculation-card__body">
+								<div class="calculation-card__media">
+									<img class="calculation-card__image" src="img/card-img-01.jpg" alt="card img">
+								</div>
+								<div class="calculation-card__options">
+									<a class="btn btn--options" href="#">Эконом</a>
+									<a class="btn btn--options btn--options-active" href="#">Комфорт</a>
+									<a class="btn btn--options" href="#">Премиум</a>
+								</div>
+								<ul class="calculation-card__info">
+									<li>Монтаж от: <strong>120 000 р</strong></li>
+									<li>Материалы от: <strong>280 000 р</strong></li>
+								</ul>
+								<a class="btn btn--card-all" href="#calculation-modal" data-toggle="modal">Подробнее</a>
+							</div>
+						</div>
+
+						<div class="calculation-card">
+							<div class="calculation-card__area">100 м<sup>2</sup> - 200 м<sup>2</sup></div>
+							<div class="calculation-card__body">
+								<div class="calculation-card__media">
+									<img class="calculation-card__image" src="img/card-img-01.jpg" alt="card img">
+								</div>
+								<div class="calculation-card__options">
+									<a class="btn btn--options" href="#">Эконом</a>
+									<a class="btn btn--options btn--options-active" href="#">Комфорт</a>
+									<a class="btn btn--options" href="#">Премиум</a>
+								</div>
+								<ul class="calculation-card__info">
+									<li>Монтаж от: <strong>120 000 р</strong></li>
+									<li>Материалы от: <strong>280 000 р</strong></li>
+								</ul>
+								<a class="btn btn--card-all" href="#calculation-modal" data-toggle="modal">Подробнее</a>
+							</div>
+						</div>
+
+						<div class="calculation-card">
+							<div class="calculation-card__area">100 м<sup>2</sup> - 200 м<sup>2</sup></div>
+							<div class="calculation-card__body">
+								<div class="calculation-card__media">
+									<img class="calculation-card__image" src="img/card-img-01.jpg" alt="card img">
+								</div>
+								<div class="calculation-card__options">
+									<!-- <a class="btn btn--options" href="#">Эконом</a> -->
+									<a class="btn btn--options btn--options-active" href="#">Комфорт</a>
+									<a class="btn btn--options" href="#">Премиум</a>
+								</div>
+								<ul class="calculation-card__info">
+									<li>Монтаж от: <strong>120 000 р</strong></li>
+									<li>Материалы от: <strong>280 000 р</strong></li>
+								</ul>
+								<a class="btn btn--card-all" href="#calculation-modal" data-toggle="modal">Подробнее</a>
+							</div>
+						</div>
+
+						<div class="calculation-card">
+							<div class="calculation-card__area">100 м<sup>2</sup> - 200 м<sup>2</sup></div>
+							<div class="calculation-card__body">
+								<div class="calculation-card__media">
+									<img class="calculation-card__image" src="img/card-img-01.jpg" alt="card img">
+								</div>
+								<div class="calculation-card__options">
+									<!-- <a class="btn btn--options" href="#">Эконом</a> -->
+									<a class="btn btn--options btn--options-active" href="#">Комфорт</a>
+									<a class="btn btn--options" href="#">Премиум</a>
+								</div>
+								<ul class="calculation-card__info">
+									<li>Монтаж от: <strong>120 000 р</strong></li>
+									<li>Материалы от: <strong>280 000 р</strong></li>
+								</ul>
+								<a class="btn btn--card-all" href="#calculation-modal" data-toggle="modal">Подробнее</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="calculation-form-wrap">
+					<form action="https://httpbin.org/post" class="form form--order" method="post">
+							<h2 class="calculation-form__title">Закажите бесплатный выезд специалиста</h2>
+							<label class="field-text">
+								<span class="field-text__input-wrap">
+									<input class="field-text__input" type="text" placeholder="Телефон">
+								</span>
+							</label>
+							<div class="field-actions">
+								<button class="btn btn--orange">Заказать смету</button>
+							</div>
+							<div class="field-checkbox">
+								<label class="field-checkbox__name">
+									<input class="field-checkbox__input" type="checkbox" checked="">
+									<span class="field-checkbox__name-text">Я даю согласие на обработку персональных данных </span>
+								</label>
+								<a href="#">Политика конфиденциальности</a>
+							</div>
+					</form>
+				</div>
+			</section>
+
+			<section class="advantages">
+				<div class="advantages__blur-bg"></div>
+				<div class="advantages__inner">
+					<h2 class="advantages__title">Почему мы?</h2>
+					<div class="advantages__card-wrapper">
+						<div class="advantages__card">
+							<div class="advantages__card-icon">
+								<svg width="39" height="49">
+									<use xlink:href="img/sprite-svg.svg#icon-advantages-01"></use>
+								</svg>
+							</div>
+							<h4 class="advantages__card-title">Точность сметы</h4>
+							<p class="advantages__card-title">Смета по материалам расчитана с точностью до 98%</p>
+						</div>
+						<div class="advantages__card">
+							<div class="advantages__card-icon">
+								<svg width="53" height="45">
+									<use xlink:href="img/sprite-svg.svg#icon-advantages-02"></use>
+								</svg>
+							</div>
+							<h4 class="advantages__card-title">Гибкие цены</h4>
+							<p class="advantages__card-title">Подбор оборудования исходя из потребности и бюджета</p>
+						</div>
+						<div class="advantages__card">
+							<div class="advantages__card-icon">
+								<svg width="49" height="50">
+									<use xlink:href="img/sprite-svg.svg#icon-advantages-03"></use>
+								</svg>
+							</div>
+							<h4 class="advantages__card-title">Проект</h4>
+							<p class="advantages__card-title">Проектирование с учетом пожеланий заказчика</p>
+						</div>
+						<div class="advantages__card">
+							<div class="advantages__card-icon">
+								<svg width="40" height="48">
+									<use xlink:href="img/sprite-svg.svg#icon-advantages-04"></use>
+								</svg>
+							</div>
+							<h4 class="advantages__card-title">Гарантия</h4>
+							<p class="advantages__card-title">Гарантия на материалы и выполненные работы</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="features">
+				<div class="features__inner">
+					<h2 class="features__title">Как мы работаем</h2>
+					<div class="features__card-wrapper">
+						<div class="features__card">
+							<div class="features__card-icon">
+								<svg width="71" height="71">
+									<use xlink:href="img/sprite-svg.svg#icon-features-01"></use>
+								</svg>
+							</div>
+							<p class="features__card-text">Выезд на объект,<br> предварительный расчет</p>
+						</div>
+						<div class="features__card">
+							<div class="features__card-icon">
+								<svg width="70" height="66">
+									<use xlink:href="img/sprite-svg.svg#icon-features-02"></use>
+								</svg>
+							</div>
+							<p class="features__card-text">Проектирование</p>
+						</div>
+						<div class="features__card">
+							<div class="features__card-icon">
+<!-- 								<svg width="71" height="71">
+									<use xlink:href="img/sprite-svg.svg#icon-features-01"></use>
+								</svg> -->
+								<img src="img/icon-features-03.png" width="70" height="72" alt="">
+							</div>
+							<p class="features__card-text">Комплектация<br> оборудования</p>
+						</div>
+						<div class="features__card">
+							<div class="features__card-icon">
+								<svg width="95" height="50">
+									<use xlink:href="img/sprite-svg.svg#icon-features-04"></use>
+								</svg>
+							</div>
+							<p class="features__card-text">Доставка материалов<br> на объект</p>
+						</div>
+						<div class="features__card">
+							<div class="features__card-icon">
+								<svg width="53" height="73">
+									<use xlink:href="img/sprite-svg.svg#icon-features-05"></use>
+								</svg>
+							</div>
+							<p class="features__card-text">Монтаж системы<br> отопления</p>
+						</div>
+						<div class="features__card">
+							<div class="features__card-icon">
+								<svg width="72" height="72">
+									<use xlink:href="img/sprite-svg.svg#icon-features-06"></use>
+								</svg>
+							</div>
+							<p class="features__card-text">Пуско-накладочные<br> работы</p>
+						</div>
+						<div class="features__card">
+							<div class="features__card-icon">
+								<svg width="68" height="74">
+									<use xlink:href="img/sprite-svg.svg#icon-features-07"></use>
+								</svg>
+							</div>
+							<p class="features__card-text">Сдача работы<br> заказчику</p>
+						</div>
+						<div class="features__card">
+							<div class="features__card-icon">
+								<svg width="56" height="63">
+									<use xlink:href="img/sprite-svg.svg#icon-features-08"></use>
+								</svg>
+							</div>
+							<p class="features__card-text">Обслуживание<br> системы отопления</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="about">
+				<div class="about__overlay"></div>
+				<div class="about__inner">
+					<h2 class="about__title">Отдел проектирования систем отопления</h2>
+					<p class="about__text--lead">«Гольфстрим» — одна из немногих компаний в Курске, которая может выполнить и проектные работы и монтажные работы</p>
+					<p class="about__text">Вы получаете комплексный расчет системы отопления, включающий необходимый комплект чертежей,
+					по которым любая квалифицированная монтажная бригада выполнит работы.
+					Индивидуальные решения по схеме топочной позволят экономить от 5000 руб за отопительный сезон</p>
+					<form action="https://httpbin.org/post" class="form form--order form--order-revers" method="post">
+							<label class="field-text">
+								<span class="field-text__input-wrap">
+									<input class="field-text__input" type="text" placeholder="Телефон">
+								</span>
+							</label>
+							<div class="field-actions">
+								<!-- <div class="field-actions__text">* — обязательные поля</div> -->
+								<button class="btn btn--orange">Заказать смету</button>
+							</div>
+							<div class="field-checkbox">
+								<label class="field-checkbox__name">
+									<input class="field-checkbox__input" type="checkbox" checked="">
+									<span class="field-checkbox__name-text--revers">Я даю согласие на обработку персональных данных </span>
+								</label>
+								<a href="#">Политика конфиденциальности</a>
+							</div>
+					</form>
+				</div>
+			</section>
+
+			<section class="equipment">
+				<div class="equipment__inner">
+					<h2 class="equipment__title">Используемое оборудование</h2>
+					<div class="owl-carousel" id="owl-carousel-equipment">
+						<div class="equipment-card" data-toggle="modal" data-target="#equipment-modal">
+							<div class="equipment-card__image">
+								<img src="img/equipment-01.jpg" alt="">
+							</div>
+							<div class="equipment-card__title">Котлы</div>
+						</div>
+						<div class="equipment-card" data-toggle="modal" data-target="#equipment-modal">
+							<div class="equipment-card__image">
+								<img src="img/equipment-02.jpg" alt="">
+							</div>
+							<div class="equipment-card__title">Водонагреватели</div>
+						</div>
+						<div class="equipment-card" data-toggle="modal" data-target="#equipment-modal">
+							<div class="equipment-card__image">
+								<img src="img/equipment-02.jpg" alt="">
+							</div>
+							<div class="equipment-card__title">Водонагреватели</div>
+						</div>
+						<div class="equipment-card" data-toggle="modal" data-target="#equipment-modal">
+							<div class="equipment-card__image">
+								<img src="img/equipment-03.jpg" alt="">
+							</div>
+							<div class="equipment-card__title">Радиаторы</div>
+						</div>
+						<div class="equipment-card" data-toggle="modal" data-target="#equipment-modal">
+							<div class="equipment-card__image">
+								<img src="img/equipment-04.jpg" alt="">
+							</div>
+							<div class="equipment-card__title">Насосы и насосное оборудование</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="examples">
+				<div class="examples__inner">
+					<h2 class="examples__title">Примеры из жизни</h2>
+				</div>
+				<div class="examples__block-wrapper">
+					<div class="examples__inner">
+						<div class="examples__block">
+							<div class="examples__image" style="background-image: url(img/examples-img-01.jpg);">
+							</div>
+							<div class="examples__caption">
+								<h3>Ситуация №1: Точная смета от специалиста - экономия бюджета 32%</h3>
+								<p class="examples-more-js">Мужчина приходил в наш салон неоднократно, каждый раз докупая материалы для системы отопления. Ничего удивительного, многие делают ремонт постепенно, и закупать всё и сразу не решаются или просто не видят смысла. Поэтому частота его визитов нас нисколько не смутила. В очередной раз посетив нас, он решил поделиться свей историей о стоительстве и комплектации коттеджа. Строя дом, он обратился в фирму, занимающуюся продажей отопительного оборудования, которая ему без проекта, особых расчетов и точных спецификаций, в течении нескольких часов составила список оборудования и озвучила примерную сумму. Мужчина приходил в наш салон неоднократно, каждый раз докупая материалы для системы отопления. Ничего удивительного, многие делают ремонт постепенно, и закупать всё и сразу не решаются или просто не видят смысла. Поэтому частота его визитов нас нисколько не смутила. В очередной раз посетив нас, он решил поделиться свей историей о стоительстве и комплектации коттеджа. Строя дом, он обратился в фирму, занимающуюся продажей отопительного оборудования, которая ему без проекта, особых расчетов и точных спецификаций, в течении нескольких часов составила список оборудования и озвучила примерную сумму. Мужчина приходил в наш салон неоднократно, каждый раз докупая материалы для системы отопления. Ничего удивительного, многие делают ремонт постепенно, и закупать всё и сразу не решаются или просто не видят смысла. Поэтому частота его визитов нас нисколько не смутила. В очередной раз посетив нас, он решил поделиться свей историей о стоительстве и комплектации коттеджа. Строя дом, он обратился в фирму, занимающуюся продажей отопительного оборудования, которая ему без проекта, особых расчетов и точных спецификаций, в течении нескольких часов составила список оборудования и озвучила примерную сумму.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="examples__block-wrapper">
+					<div class="examples__inner">
+						<div class="examples__block">
+							<div class="examples__image" style="background-image: url(img/examples-img-02.jpg);">
+							</div>
+							<div class="examples__caption">
+								<h3>Ситуация №1: Точная смета от специалиста - экономия бюджета 32%</h3>
+								<p class="examples-more-js">Мужчина приходил в наш салон неоднократно, каждый раз докупая материалы для системы отопления. Ничего удивительного, многие делают ремонт постепенно, и закупать всё и сразу не решаются или просто не видят смысла. Поэтому частота его визитов нас нисколько не смутила. В очередной раз посетив нас, он решил поделиться свей историей о стоительстве и комплектации коттеджа. Строя дом, он обратился в фирму, занимающуюся продажей отопительного оборудования, которая ему без проекта, особых расчетов и точных спецификаций, в течении нескольких часов составила список оборудования и озвучила примерную сумму. Мужчина приходил в наш салон неоднократно, каждый раз докупая материалы для системы отопления. Ничего удивительного, многие делают ремонт постепенно, и закупать всё и сразу не решаются или просто не видят смысла. Поэтому частота его визитов нас нисколько не смутила. В очередной раз посетив нас, он решил поделиться свей историей о стоительстве и комплектации коттеджа. Строя дом, он обратился в фирму, занимающуюся продажей отопительного оборудования, которая ему без проекта, особых расчетов и точных спецификаций, в течении нескольких часов составила список оборудования и озвучила примерную сумму. Мужчина приходил в наш салон неоднократно, каждый раз докупая материалы для системы отопления. Ничего удивительного, многие делают ремонт постепенно, и закупать всё и сразу не решаются или просто не видят смысла. Поэтому частота его визитов нас нисколько не смутила. В очередной раз посетив нас, он решил поделиться свей историей о стоительстве и комплектации коттеджа. Строя дом, он обратился в фирму, занимающуюся продажей отопительного оборудования, которая ему без проекта, особых расчетов и точных спецификаций, в течении нескольких часов составила список оборудования и озвучила примерную сумму.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="dubl">
+				<div class="dubl__left">
+					<div class="dubl__block">
+						<div class="dubl__block-caption text-center">
+							<h3>Вы монтажник? Давайте сотрудничать!</h3>
+							<p>Приглашаем монтажные организации для</p>
+							<p>сотрудничества на взаимовыгодных условиях</p>
+						</div>
+						<form action="https://httpbin.org/post" class="form form--order form--order-revers" method="post">
+								<label class="field-text">
+									<span class="field-text__input-wrap">
+										<input class="field-text__input" type="text" placeholder="Телефон">
+									</span>
+								</label>
+								<div class="field-actions">
+									<button class="btn btn--orange">Оставить заявку</button>
+								</div>
+								<div class="field-checkbox">
+									<label class="field-checkbox__name">
+										<input class="field-checkbox__input" type="checkbox" checked="">
+										<span class="field-checkbox__name-text--revers">Я даю согласие на обработку персональных данных </span>
+									</label>
+									<a href="#">Политика конфиденциальности</a>
+								</div>
+						</form>
+					</div>
+				</div>
+				<div class="dubl__right">
+					<div class="dubl__block">
+						<div class="dubl__block-caption">
+							<h3>Лицензированный сервисный центр</h3>
+							<p>Возникли вопросы по использованию оборудования?</p>
+							<p>Позвоните в наш сервис и мы решим вашу проблему</p>
+							<h4>Телефон: +7 (4712) 309-209</h4>
+							<blockquote>
+								<p>По телефону вы можете вызвать мастера</p>
+								<p>или заключить договор на обслуживание</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="reviews">
+				<div class="reviews__inner">
+					<h2 class="reviews__title">Отзывы</h2>
+					<div class="reviews__card-wrapper">
+						<div class="reviews__card">
+							<div class="embed-responsive  embed-responsive--16-9">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/ejOPpUNxXu4" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<h4 class="reviews__card-title">Иванов Дмитрий</h4>
+							<p>«Помогли подобрать оптимальная решение исходя из бюджета..»</p>
+						</div>
+						<div class="reviews__card">
+							<div class="embed-responsive  embed-responsive--16-9">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/ejOPpUNxXu4" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<h4 class="reviews__card-title">Иванов Дмитрий</h4>
+							<p>«Помогли подобрать оптимальная решение исходя из бюджета..»</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="feedback">
+				<div class="feedback__blur-bg"></div>
+				<div class="feedback__inner">
+					<h2 class="feedback__title">Подберем индивидуальное решение системы отопления!</h2>
+					<p class="feedback__text">Для получения подробной информации звоните нам: +7 (4712) 306-026 или оставьте заявку</p>
+					<form action="https://httpbin.org/post" class="form form--order form--order-revers" method="post">
+							<label class="field-text">
+								<!-- <span class="field-text__name">Текстовое поле</span> -->
+								<span class="field-text__input-wrap">
+									<input class="field-text__input" type="text" placeholder="Имя">
+								</span>
+							</label>
+							<label class="field-text">
+								<!-- <span class="field-text__name">Текстовое поле</span> -->
+								<span class="field-text__input-wrap">
+									<input class="field-text__input" type="text" placeholder="Телефон">
+								</span>
+							</label>
+							<div class="field-actions">
+								<!-- <div class="field-actions__text">* — обязательные поля</div> -->
+								<button class="btn btn--orange">Заказать смету</button>
+							</div>
+							<div class="field-checkbox">
+								<label class="field-checkbox__name">
+									<input class="field-checkbox__input" type="checkbox" checked="">
+									<span class="field-checkbox__name-text--revers">Я даю согласие на обработку персональных данных </span>
+								</label>
+								<a href="#">Политика конфиденциальности</a>
+							</div>
+					</form>
+				</div>
+			</section>
+
+			<main role="main">
+
+			</main>
+
+		</div>
+
+		<div class="page__footer-wrapper">
+			@@include('blocks/page-footer/page-footer.html')
+		</div>
+
+	</div>
+
+	@@include('_include/page_bottom.html')
+</body>
+</html>

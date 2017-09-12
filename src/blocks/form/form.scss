@@ -1,0 +1,90 @@
+// В этом файле должны быть стили для БЭМ-блока form, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, $media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+$font-family--headings:      'Open Sans', 'Arial', sans-serif !default;
+
+$font-size--h3:               1.5em !default;
+
+$line-height:                 1.375em !default;
+
+.form {
+
+  $block-name:                &;
+  // #{$block-name}__element
+
+  &:not(:last-child) {
+    margin-bottom: $line-height;
+  }
+
+  fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    &:not(:last-child) {
+      margin-bottom: $line-height;
+    }
+  }
+
+  legend {
+    display: block;
+    width: 100%;
+    font-size: $font-size--h3;
+    font-family: $font-family--headings;
+    font-weight: 700;
+    line-height: $line-height;
+    color: currentColor;
+    margin-top: $line-height;
+    margin-bottom: ($line-height / 2);
+  }
+
+  // FORM ORDER
+	&--order {
+		max-width: 630px;
+		margin: auto;
+		padding: 15px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.field-text,
+		.field-actions {
+			flex-basis: 100%;
+			min-width: 100%;
+			@media (min-width: $screen-lg) {
+				flex-basis: 48%;
+				min-width: 48%;
+			}
+		}
+		.field-actions {
+			margin-top: 0;
+			.btn {
+				width: 100%;
+				padding: 1em 1.1em;
+			}
+		}
+		.field-checkbox {
+			flex-basis: 100%;
+			min-width: 100%;
+		}
+	}
+	&--order-revers {
+		color: #fff;
+		.field-checkbox {
+			color: #fff;
+		}
+		a {
+			color: #fff;
+		}
+		.field-text__input {
+			border-color: #fff;
+			color: #fff;
+			background-color: transparent;
+			@include placeholder {
+				color: #fff;
+				text-overflow: ellipsis;
+			}
+		}
+	}
+}
