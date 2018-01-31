@@ -11,8 +11,11 @@
   &__card {
     @include col();
     @include col(lg, 3);
+<<<<<<< HEAD
     @include col(md, 4);
     @include col(sm, 6);
+=======
+>>>>>>> e407bbb0d9fae26021afab0a03f91cab6c3ee4cf
     margin-bottom: 2em;
   }
   &__card-wrap {
