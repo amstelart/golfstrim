@@ -146,7 +146,9 @@ $z-index-modal:               100 !default;
 
   &--offers {
     #{$block-name}__dialog {
-      max-width: 495px;
+      @media (min-width: $screen-lg) {
+        max-width: 495px;
+      }
     }
     #{$block-name}__header {
       padding: 25px 4em 20px 4em;
