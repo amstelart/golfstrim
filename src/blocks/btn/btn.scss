@@ -89,7 +89,8 @@ $border-radius:               3px !default;
 		background-color: transparent;
 		border-color: transparent;
 		border-radius: 0;
-		padding: 0.7em 0.6em;
+    font-size: 14px;
+		padding: 0.5em 0.4em;
 
   	&.btn--options-active {
   		background-color: #606c82;

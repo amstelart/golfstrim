@@ -104,8 +104,8 @@ $z-index-modal:               100 !default;
     padding: 15px 60px;
     flex-grow: 1;
     p {
-      font-size: 14px;
-      line-height: 36px;
+      font-size: 16px;
+      line-height: 32px;
     }
     @media (max-width: $screen-lg) {
       padding: 10px 15px;
@@ -143,6 +143,34 @@ $z-index-modal:               100 !default;
       align-items: center;
     }
   }
+
+  &--offers {
+    #{$block-name}__dialog {
+      max-width: 495px;
+    }
+    #{$block-name}__header {
+      padding: 25px 4em 20px 4em;
+      border-bottom: none;
+    }
+    #{$block-name}__body {
+      padding: 0 4em 5px 4em;
+    }
+    #{$block-name}__title {
+      text-transform: uppercase;
+      font-size: 24px;
+    }
+    #{$block-name}__caption {
+      font-size: 16px;
+    }
+    .field-checkbox {
+      text-align: center;
+    }
+    .btn--orange {
+      width: 100%;
+      padding: 0.9em 0.4em;
+    }
+  }
+
 }
 
 

@@ -10,6 +10,9 @@
 	.owl-next {
 		position: absolute;
 		top: 35%;
+		svg {
+			stroke: #000;
+		}
 	}
 	.owl-prev {
 		left: -40px;

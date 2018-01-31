@@ -1,0 +1,29 @@
+// В этом файле должны быть стили для БЭМ-блока akcii, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.akcii {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  max-width: 945px;
+
+  &__card {
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 30px;
+  }
+
+  &__card-title {
+    margin-top: 1em;
+    margin-bottom: 0.6875em;
+    font-weight: 700;
+    line-height: 1.375em;
+  }
+
+  &__card-caption {
+    color: #6d6d6d;
+    margin-bottom: 2.1em;
+    line-height: 1.6;
+  }
+
+}

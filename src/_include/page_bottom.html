@@ -54,6 +54,45 @@
   </div>
 </div>
 
+<div id="offers-modal" class="modal modal--offers" tabindex="-1" role="dialog">
+  <div class="modal__dialog" role="document">
+    <div class="modal__content">
+      <div class="modal__header">
+        <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+        <h4 class="modal__title">Заявка на товар</h4>
+        <p class="modal__caption">Наши менеджеры свяжутся с Вами и уточнят детали заказа</p>
+      </div>
+      <div class="modal__body">
+        <form action="https://httpbin.org/post" class="form" method="post">
+            <label class="field-text">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" placeholder="Имя">
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="tel" placeholder="Телефон">
+              </span>
+            </label>
+            <div class="field-actions">
+              <button class="btn btn--orange">Заказать</button>
+            </div>
+            <div class="field-checkbox">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" checked="">
+                <span class="field-checkbox__name-text">Я даю согласие на обработку персональных данных </span>
+              </label>
+              <a href="#">Политика конфиденциальности</a>
+            </div>
+        </form>
+      </div>
+      <div class="modal__footer">
+        <!-- <button type="button" class="btn" data-dismiss="modal">Закрыть</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery.3.1.1.min.js"><\/script>')</script>
 
