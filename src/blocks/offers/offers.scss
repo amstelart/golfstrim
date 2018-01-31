@@ -1,0 +1,58 @@
+// В этом файле должны быть стили для БЭМ-блока offers, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.offers {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  @include row;
+
+  &__card {
+    @include col();
+    @include col(lg, 3);
+    @include col(md, 4);
+    @include col(sm, 6);
+    margin-bottom: 2em;
+  }
+  &__card-wrap {
+    border: 2px solid #e5e5e5;
+    padding: 1.3em;
+  }
+  &__card-name {
+    margin-bottom: 0.8em;
+  }
+  &__card-vendor {
+    color: #9f9f9f;
+    margin-bottom: 0.8em;
+  }
+  &__card-cost {
+    font-size: 24px;
+    font-weight: bold;
+    border-top: 2px solid #e5e5e5;
+    padding: 0.8em 0;
+    span {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .amount {
+      color: #9f9f9f;
+      &:before {
+        content: "/";
+        margin-right: 3px;
+      }
+    }
+  }
+  &__card-btn {
+    width: 100%;
+    border: 2px solid $color-main;
+    background: #fff;
+    padding: 0.9em 0.7em;
+    &:hover,
+    &:focus {
+      background: $color-main;
+      border-color: $color-main;
+    }
+  }
+
+}

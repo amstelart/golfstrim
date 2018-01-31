@@ -22,6 +22,8 @@
 	}
 	&-form__title {
 		margin-top: 0;
+		flex-basis: 100%;
+		text-align: center;
 		margin-bottom: 40px;
 		@media (max-width: $screen-lg) {
 			margin-bottom: 20px;
@@ -30,22 +32,14 @@
 		}
 	}
 	&-card-wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		@media (min-width: $screen-lg) {
-			display: flex;
-		}
+		@include row;
 	}
 	&-card {
+		@include col();
+		@include col(lg, 3);
+		@include col(md, 6);
 		text-align: center;
-		margin: 0 15px 20px 15px;
-		width: 100%;
-		@media (min-width: $screen-md) {
-			width: calc(50% - 30px);
-		}
-		@media (min-width: $screen-xl) {
-			width: calc(25% - 30px);
-		}
+		margin-bottom: 20px;
 		&__area {
 			font-size: 20px;
 			padding: 25px 15px;
@@ -89,3 +83,7 @@
 		}
 	}
 }
+
+.calculation-card__info, .calculation-card__area {display:none;}
+.calculation-card__info-active, .calculation-card__area-active {display:block;}
+.hidden {display:none!important}
