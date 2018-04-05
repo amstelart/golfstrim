@@ -1,0 +1,48 @@
+// В этом файле должны быть стили для БЭМ-блока table-basket, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.table-basket {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  tbody {}
+
+  tr th {
+    font-weight: 400;
+    text-align: left;
+  }
+
+  td,
+  th {
+    border-bottom: 2px solid #e5e5e5;
+    border-right: 0;
+    padding: 1em;
+  }
+
+  .basket-image {
+    width: 100px;
+  }
+
+  .basket-info {
+    font-size: 16px;
+    min-width: 200px;
+
+    .art {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #9a9a9a;
+    }
+  }
+
+  .basket-cost {
+    font-weight: 700;
+    white-space: nowrap;
+    font-size: 24px;
+    small {
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+
+}

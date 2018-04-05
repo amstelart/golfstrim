@@ -1,0 +1,26 @@
+// В этом файле должны быть стили для БЭМ-блока table-spec, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.table-spec {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  width: 100%;
+
+  td {
+    padding: 0 5px 2px 0;
+  }
+
+  tr {
+    td {
+      color: #444;
+      font-size: 14px;
+
+      &:first-child {
+        width: 300px;
+      }
+    }
+  }
+
+}

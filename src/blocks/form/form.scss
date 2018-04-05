@@ -87,4 +87,44 @@ $line-height:                 1.375em !default;
 			}
 		}
 	}
+
+  &--basket-order {
+    margin-bottom: 0 !important;
+
+    .field-row {
+      @include row;
+    }
+
+    .field-order {
+      @include col();
+      @include col(xl, 4);
+      @include col(lg, 6);
+      margin-top: 0;
+
+      .btn {
+        padding: 1em 1.1em;
+        width: 100%;
+      }
+    }
+
+    .field-cost {
+      font-size: 18px;
+      padding: 1em 1.1em;
+
+      span {
+        font-weight: 700;
+        font-size: 24px;
+      }
+    }
+
+    .field-text__input {
+      background: transparent;
+      border-color: #afafaf;
+      border-radius: 0;
+
+      &::placeholder {
+        color: #000;
+      }
+    }
+  }
 }

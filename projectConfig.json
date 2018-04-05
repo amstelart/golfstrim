@@ -68,7 +68,16 @@
     "dubl": [],
     "main": [],
     "akcii": [],
-    "offers": []
+    "offers": [],
+    "payment-method": [],
+    "sidebar-nav": [],
+    "image-carousel": [],
+    "brand-carousel": [],
+    "sidebar-filter": [],
+    "table-spec": [],
+    "product": [],
+    "table-basket": [],
+    "order": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

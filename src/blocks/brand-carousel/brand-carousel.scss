@@ -1,0 +1,21 @@
+// В этом файле должны быть стили для БЭМ-блока brand-carousel, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.brand-carousel {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  .owl-prev {
+    left: 0;
+  }
+
+  .owl-next {
+    right: 0;
+  }
+}

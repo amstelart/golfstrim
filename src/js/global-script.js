@@ -34,6 +34,47 @@ $(document).ready(function(){
     }
   });
 
+  $(".image-carousel").owlCarousel({
+    items: 1,
+    nav: false,
+    loop: true
+  });
+
+  $(".brand-carousel").owlCarousel({
+    items: 3,
+    nav: true,
+    margin:30,
+    navText: ['<svg width="26" height="48" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="26" height="48" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+    loop: true
+  });
+
+  var demoNoUiSlider = document.getElementById('demo-nouislider');
+  var demoNoUiSliderStartInput = document.getElementById('demo-nouislider-start');
+  var demoNoUiSliderEndInput = document.getElementById('demo-nouislider-end');
+  noUiSlider.create(demoNoUiSlider, {
+    start: [demoNoUiSliderStartInput.value, demoNoUiSliderEndInput.value],
+    connect: true,
+    step: 1,
+    range: {
+      'min': 0,
+      'max': 100
+    }
+  });
+  demoNoUiSlider.noUiSlider.on('update', function( values, handle ) {
+    var value = values[handle];
+    if ( handle ) {
+      demoNoUiSliderEndInput.value = Math.round(value);
+    } else {
+      demoNoUiSliderStartInput.value = Math.round(value);
+    }
+  });
+  demoNoUiSliderEndInput.addEventListener('change', function(){
+    demoNoUiSlider.noUiSlider.set([null, this.value]);
+  });
+  demoNoUiSliderStartInput.addEventListener('change', function(){
+    demoNoUiSlider.noUiSlider.set([this.value, null]);
+  });
+
   // 2GIS MAP
     // DG.then(function () {
     //     map = DG.map('map', {

@@ -39,16 +39,18 @@ $field-padding-horizontal:    0.7em !default;
       content: '';
       flex-grow: 1;
       height: 1px;
-      background-color: $border-color;
+      background-color: #e5e5e5;
     }
   }
 
   &__link-wrap {
     position: relative;
-    border: 1px solid $border-color;
+    border: 1px solid #e5e5e5;
+    border-bottom: 0;
 
     &:not(:last-child) {
       border-right: none;
+      margin-right: 10px;
     }
 
     &--active {
@@ -56,16 +58,19 @@ $field-padding-horizontal:    0.7em !default;
       #{$block-name}__link {
         color: $text-color;
         background-color: #fff;
+        border-color: #ffae37;
       }
     }
   }
 
   &__link {
     display: block;
-    padding: $field-padding-vertical $field-padding-horizontal;
-    color: $text-color--muted;
+    padding: $field-padding-vertical $field-padding-horizontal*2;
+    color: #000;
+    font-weight: 700;
     text-decoration: none;
-    background-color: $gray-lightest;
+    background-color: #efefef;
+    border-top: 4px solid #efefef;
 
     &:hover,
     &:focus {
@@ -75,8 +80,7 @@ $field-padding-horizontal:    0.7em !default;
 
   &__content-wrapper {
     display: block;
-    padding: $field-padding-vertical $field-padding-horizontal;
-    border: 1px solid $border-color;
+    padding: $field-padding-vertical 0;
     border-top: none;
   }
 
@@ -94,4 +98,3 @@ $field-padding-horizontal:    0.7em !default;
     }
   }
 }
-

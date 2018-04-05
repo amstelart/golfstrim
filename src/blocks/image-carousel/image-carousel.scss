@@ -1,0 +1,33 @@
+// В этом файле должны быть стили для БЭМ-блока image-carousel, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.image-carousel {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  margin-bottom: 30px;
+
+  .owl-dots {
+    display: flex;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .owl-dot {
+    margin: 5px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    opacity: 0.5;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+}

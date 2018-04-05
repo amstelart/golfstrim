@@ -15,6 +15,7 @@ $border-color:                hsl(0, 0%, 60%) !default;
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: $line-height;
   margin-bottom: $line-height;
 
@@ -22,10 +23,15 @@ $border-color:                hsl(0, 0%, 60%) !default;
     display: block;
     padding: 0.5em;
     min-width: 2.5em;
-    border: 1px solid $border-color;
     text-decoration: none;
     text-align: center;
     color: $text-color;
+
+    svg {
+      stroke: #000;
+      vertical-align: middle;
+      margin-bottom: 3px;
+    }
 
     & + & {
       border-left: 0;

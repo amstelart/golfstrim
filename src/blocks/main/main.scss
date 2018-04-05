@@ -9,10 +9,30 @@
 	&__inner {
 		@include container;
 	}
+
+  &__cols {
+    @include row;
+  }
+
+  &__sidebar {
+    @include col();
+    @include col(lg, 3);
+  }
+
+  &__container {
+    @include col();
+    @include col(lg, 9);
+  }
+
 	&__title {
 		text-align: center;
 		font-size: 28px;
+
+    &.mt-0 {
+      text-align: left;
+    }
 	}
+
 	&__mounting {}
 	&__mounting-block {
 		padding-bottom: 1.375em;
@@ -230,4 +250,3 @@
 		min-width: 100%;
 	}
 }
-
