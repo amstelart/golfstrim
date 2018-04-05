@@ -1,0 +1,97 @@
+// В этом файле должны быть стили для БЭМ-блока incr, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.incr {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  display: flex;
+  border: 1px solid #e5e5e5;
+  max-width: 122px;
+  position: relative;
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background .4s;
+    border-radius: 50%;
+    width: 30px;
+    height: 35px;
+    background: #fff;
+    cursor: pointer
+  }
+
+  &__nav:hover .icon {
+    span {
+      &:before,
+      &:after {
+        background: #ffae37;
+      }
+    }
+  }
+
+  &__nav .icon {
+    width: 10px;
+    height: 10px;
+  }
+
+  &__val {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    width: 62px;
+    height: 35px;
+    font-size: 14px;
+    position: relative;
+    transition: all .4s
+  }
+
+  &__minus {
+    .icon {
+      position: relative;
+      span {
+        &:before {
+          content: "";
+          height: 2px;
+          width: 100%;
+          position: absolute;
+          top: 4px;
+          display: block;
+          background: #707070;
+        }
+      }
+    }
+  }
+
+  &__plus {
+    .icon {
+      position: relative;
+      span {
+        &:before {
+          content: "";
+          height: 2px;
+          width: 100%;
+          position: absolute;
+          top: 4px;
+          display: block;
+          background: #707070;
+        }
+        &:after {
+          content: "";
+          height: 2px;
+          width: 100%;
+          position: absolute;
+          top: 4px;
+          display: block;
+          transform: rotate(90deg);
+          background: #707070;
+        }
+      }
+    }
+  }
+}

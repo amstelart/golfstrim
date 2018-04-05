@@ -43,4 +43,14 @@
     margin-bottom: 10px;
   }
 
+  &__action {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .incr {
+      margin-right: 25px;
+    }
+  }
+
 }

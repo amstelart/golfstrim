@@ -49,7 +49,7 @@ $field-padding-horizontal:    0.7em !default;
     border-bottom: 0;
 
     &:not(:last-child) {
-      border-right: none;
+      // border-right: none;
       margin-right: 10px;
     }
 

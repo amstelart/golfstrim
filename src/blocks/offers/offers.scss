@@ -8,7 +8,7 @@
 
   @include row;
 
-  &__card {
+  .offers__card {
     @include col();
     @include col(lg, 4);
     @include col(md, 4);
@@ -33,6 +33,7 @@
     color: #fff;
     position: absolute;
     left: 0;
+    z-index: 10;
     padding: 5px 15px;
     top: 20px;
 

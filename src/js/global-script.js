@@ -48,9 +48,16 @@ $(document).ready(function(){
     loop: true
   });
 
-  var demoNoUiSlider = document.getElementById('demo-nouislider');
-  var demoNoUiSliderStartInput = document.getElementById('demo-nouislider-start');
-  var demoNoUiSliderEndInput = document.getElementById('demo-nouislider-end');
+  $(".product-carousel").owlCarousel({
+    items: 3,
+    nav: false,
+    margin:30,
+    loop: false
+  });
+
+  var demoNoUiSlider = document.getElementById('price-nouislider');
+  var demoNoUiSliderStartInput = document.getElementById('price-nouislider-start');
+  var demoNoUiSliderEndInput = document.getElementById('price-nouislider-end');
   noUiSlider.create(demoNoUiSlider, {
     start: [demoNoUiSliderStartInput.value, demoNoUiSliderEndInput.value],
     connect: true,

@@ -1,0 +1,120 @@
+// В этом файле должны быть стили для БЭМ-блока field-checkbox, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+$line-height:                 1.5 !default;
+
+$border-radius:               rem(3px) !default;
+
+.filter-checkbox {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: block;
+  margin-bottom: 0.7rem;
+
+  &__title {
+    display: block;
+    font-weight: 700;
+    line-height: $line-height;
+    margin-bottom: 0.4em;
+  }
+
+  &__input-wrap {
+
+    & + & {
+      margin-top: 1rem;
+    }
+  }
+
+  &__name {
+    position: relative;
+    display: inline-block;
+    padding-left: 1.5em;
+    margin-right: 0.6em;
+    font-weight: 400;
+    line-height: $line-height;
+    cursor: pointer;
+  }
+
+  &__name-text {
+    display: inline-block;
+
+    // свой чекбокс с картинкой
+
+    // &:before {
+    //   content: '';
+    //   position: absolute;
+    //   top: rem(5px);
+    //   left: 0;
+    //   width: rem(14px);
+    //   height: rem(14px);
+    //   background-image: svg-load('../blocks/field-checkbox/bg-img/checkbox.svg');
+    //   background-size: 100%;
+    // }
+    // @at-root input:checked ~ &:before {
+    //   background-image: svg-load('../blocks/field-checkbox/bg-img/checkbox--checked.svg');
+    // }
+
+    // / свой чекбокс с картинкой
+
+    // свой чекбокс без картинок
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 3px;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #000;
+    }
+
+    @at-root input:checked ~ &:before {
+      border-color: #ffa508;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 5px;
+      width: 8px;
+      height: 8px;
+      background: #ffa508;
+      opacity: 0;
+      transition: opacity $transition-time;
+
+      @at-root input:checked ~ & {
+        opacity: 1;
+      }
+    }
+
+    // / свой чекбокс без картинок
+  }
+
+  &__input {
+    position: absolute;
+    top: 0.7em;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transform: translateY(-50%);
+
+    &:focus,
+    &:active {
+      @include field-focus;
+    }
+
+    // сокрытие инпута в случае использования своего чекбокса
+    opacity: 0;
+  }
+
+  &__help-text-wrap {
+    padding-left: 1.5em;
+  }
+
+  &__help-text {
+    @include field-help-text;
+  }
+}
