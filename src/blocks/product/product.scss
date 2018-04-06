@@ -45,11 +45,42 @@
 
   &__action {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
 
     .incr {
       margin-right: 25px;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: ($screen-md - 1)) {
+    &__body {
+      padding: 20px 35px;
+    }
+
+    &__logo {
+      max-width: 150px;
+      margin-left: 20px;
+    }
+  }
+
+  @media (max-width: ($screen-sm - 1)) {
+    flex-direction: column;
+
+    &__action {
+      .incr {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+        max-width: 100%;
+      }
+      .incr__val {
+        flex-grow: 1;
+      }
+      .btn {
+        width: 100%;
+      }
     }
   }
 

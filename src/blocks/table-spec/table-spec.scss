@@ -10,12 +10,17 @@
 
   td {
     padding: 0 5px 2px 0;
+    vertical-align: top;
   }
 
   tr {
     td {
       color: #444;
       font-size: 14px;
+
+      @media (max-width: ($screen-sm - 1)) {
+        font-size: 12px;
+      }
 
       &:first-child {
         width: 300px;

@@ -97,4 +97,11 @@ $field-padding-horizontal:    0.7em !default;
       }
     }
   }
+
+  @media (max-width: ($screen-sm - 1)) {
+    &__link {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  }
 }

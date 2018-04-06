@@ -79,7 +79,8 @@
     "table-basket": [],
     "order": [],
     "incr": [],
-    "filter-checkbox": []
+    "filter-checkbox": [],
+    "basket-btn": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

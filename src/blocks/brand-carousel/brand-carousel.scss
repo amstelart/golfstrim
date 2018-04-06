@@ -11,6 +11,25 @@
   padding-left: 40px;
   padding-right: 40px;
 
+  .owl-prev,
+  .owl-next {
+    top: 50%;
+    width: 26px;
+    height: 48px;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: ($screen-md - 1)) {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .owl-prev,
+    .owl-next {
+      width: 15px;
+      height: 30px;
+    }
+  }
+
   .owl-prev {
     left: 0;
   }

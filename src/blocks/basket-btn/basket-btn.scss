@@ -1,0 +1,30 @@
+// В этом файле должны быть стили для БЭМ-блока basket-btn, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.basket-btn {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  border: 2px solid #cccccc;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  padding: 13px 25px 13px 55px;
+  border-radius: 8px;
+
+  background-image: url('src/blocks/basket-btn/img/basket-icon.svg');
+  background-position: 15px center;
+  background-repeat: no-repeat;
+
+  @media (max-width: ($screen-xl - 1)) {
+    min-width: 320px;
+    margin-top: 10px;
+  }
+
+  @media (max-width: ($screen-sm - 1)) {
+    min-width: 100%;
+    margin-top: 10px;
+  }
+
+}
