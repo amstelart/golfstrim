@@ -152,44 +152,66 @@
 									<a href="catalog-page.html" class="sidebar-nav__link">Запорно-регулирующая арматура</a>
 								</li>
 							</ul>
+
 							<div class="sidebar-filter">
 								<div class="sidebar-filter__part">
 									<div class="sidebar-filter__title">Цена</div>
 									<div class="sidebar-filter__body">
-										<div class="nouislider" id="demo-nouislider"></div>
-										<input type="number" value="10" id="demo-nouislider-start">
-										<input type="number" value="90" id="demo-nouislider-end">
+
+										<div class="nouislider" id="price-nouislider"></div>
+										<div class="price-nouislider-group">
+											<div class="price-nouislider-start">
+												<span>от</span>
+												<input type="number" value="10" id="price-nouislider-start">
+											</div>
+											<div class="price-nouislider-end">
+												<span>до</span>
+												<input type="number" value="90" id="price-nouislider-end">
+											</div>
+										</div>
+
 									</div>
 								</div>
 								<div class="sidebar-filter__part">
 									<div class="sidebar-filter__title">Производители</div>
 									<div class="sidebar-filter__body">
-										<div class="field-checkbox">
-										  <div class="field-checkbox__input-wrap">
-										    <label class="field-checkbox__name">
-										      <input class="field-checkbox__input" type="checkbox" checked>
-										      <span class="field-checkbox__name-text">Baxi</span>
-										    </label>
-										  </div>
-										  <div class="field-checkbox__input-wrap">
-										    <label class="field-checkbox__name">
-										      <input class="field-checkbox__input" type="checkbox" checked>
-										      <span class="field-checkbox__name-text">Solino</span>
-										    </label>
-										  </div>
-										  <div class="field-checkbox__input-wrap">
-										    <label class="field-checkbox__name">
-										      <input class="field-checkbox__input" type="checkbox" checked>
-										      <span class="field-checkbox__name-text">Factory</span>
-										    </label>
-										  </div>
-										  <div class="field-checkbox__input-wrap">
-										    <label class="field-checkbox__name">
-										      <input class="field-checkbox__input" type="checkbox" checked>
-										      <span class="field-checkbox__name-text">Indigo</span>
-										    </label>
-										  </div>
+
+										<div class="filter-checkbox">
+											<div class="filter-checkbox__input-wrap">
+												<label class="filter-checkbox__name">
+													<input class="filter-checkbox__input" type="checkbox" checked>
+													<span class="filter-checkbox__name-text">Baxi</span>
+												</label>
+											</div>
 										</div>
+
+										<div class="filter-checkbox">
+											<div class="filter-checkbox__input-wrap">
+												<label class="filter-checkbox__name">
+													<input class="filter-checkbox__input" type="checkbox">
+													<span class="filter-checkbox__name-text">Solino</span>
+												</label>
+											</div>
+										</div>
+
+										<div class="filter-checkbox">
+											<div class="filter-checkbox__input-wrap">
+												<label class="filter-checkbox__name">
+													<input class="filter-checkbox__input" type="checkbox">
+													<span class="filter-checkbox__name-text">Factory</span>
+												</label>
+											</div>
+										</div>
+
+										<div class="filter-checkbox">
+											<div class="filter-checkbox__input-wrap">
+												<label class="filter-checkbox__name">
+													<input class="filter-checkbox__input" type="checkbox">
+													<span class="filter-checkbox__name-text">Indigo</span>
+												</label>
+											</div>
+										</div>
+
 									</div>
 								</div>
 							</div>
