@@ -98,9 +98,9 @@
 									</a>
 								</li>
 							</ul>
-							<div class="basket">
-								<div class="btn btn-basket">Корзина</div>
-							</div>
+							<a href="#" class="basket-btn">
+								Корзина
+							</a>
 						</nav>
 						<!-- end main nav -->
 					</div>
@@ -156,40 +156,61 @@
 								<div class="sidebar-filter__part">
 									<div class="sidebar-filter__title">Цена</div>
 									<div class="sidebar-filter__body">
-										<div class="nouislider" id="demo-nouislider"></div>
-										<input type="number" value="10" id="demo-nouislider-start">
-										<input type="number" value="90" id="demo-nouislider-end">
+
+										<div class="nouislider" id="price-nouislider"></div>
+										<div class="price-nouislider-group">
+											<div class="price-nouislider-start">
+												<span>от</span>
+												<input type="number" value="10" id="price-nouislider-start">
+											</div>
+											<div class="price-nouislider-end">
+												<span>до</span>
+												<input type="number" value="90" id="price-nouislider-end">
+											</div>
+										</div>
+
 									</div>
 								</div>
 								<div class="sidebar-filter__part">
 									<div class="sidebar-filter__title">Производители</div>
 									<div class="sidebar-filter__body">
-										<div class="field-checkbox">
-										  <div class="field-checkbox__input-wrap">
-										    <label class="field-checkbox__name">
-										      <input class="field-checkbox__input" type="checkbox" checked>
-										      <span class="field-checkbox__name-text">Baxi</span>
-										    </label>
-										  </div>
-										  <div class="field-checkbox__input-wrap">
-										    <label class="field-checkbox__name">
-										      <input class="field-checkbox__input" type="checkbox" checked>
-										      <span class="field-checkbox__name-text">Solino</span>
-										    </label>
-										  </div>
-										  <div class="field-checkbox__input-wrap">
-										    <label class="field-checkbox__name">
-										      <input class="field-checkbox__input" type="checkbox" checked>
-										      <span class="field-checkbox__name-text">Factory</span>
-										    </label>
-										  </div>
-										  <div class="field-checkbox__input-wrap">
-										    <label class="field-checkbox__name">
-										      <input class="field-checkbox__input" type="checkbox" checked>
-										      <span class="field-checkbox__name-text">Indigo</span>
+
+										<div class="filter-checkbox">
+										  <div class="filter-checkbox__input-wrap">
+										    <label class="filter-checkbox__name">
+										      <input class="filter-checkbox__input" type="checkbox" checked>
+										      <span class="filter-checkbox__name-text">Baxi</span>
 										    </label>
 										  </div>
 										</div>
+
+										<div class="filter-checkbox">
+										  <div class="filter-checkbox__input-wrap">
+										    <label class="filter-checkbox__name">
+										      <input class="filter-checkbox__input" type="checkbox">
+										      <span class="filter-checkbox__name-text">Solino</span>
+										    </label>
+										  </div>
+										</div>
+
+										<div class="filter-checkbox">
+										  <div class="filter-checkbox__input-wrap">
+										    <label class="filter-checkbox__name">
+										      <input class="filter-checkbox__input" type="checkbox">
+										      <span class="filter-checkbox__name-text">Factory</span>
+										    </label>
+										  </div>
+										</div>
+
+										<div class="filter-checkbox">
+										  <div class="filter-checkbox__input-wrap">
+										    <label class="filter-checkbox__name">
+										      <input class="filter-checkbox__input" type="checkbox">
+										      <span class="filter-checkbox__name-text">Indigo</span>
+										    </label>
+										  </div>
+										</div>
+
 									</div>
 								</div>
 							</div>
@@ -214,6 +235,18 @@
 										<div class="product__info-item">Наличие: <span style="color:#4eb113;">достаточно</span></div>
 									</div>
 									<div class="product__action">
+										<div class="incr">
+	                      <div class="incr__minus incr__nav">
+													<span class="icon"><span></span></span>
+	                      </div>
+	                      <div class="incr__val">
+	                        <span>4</span>
+	                        <div class="incr__val-coner"></div>
+	                      </div>
+	                      <div class="incr__plus incr__nav">
+													<span class="icon"><span></span></span>
+	                      </div>
+	                   </div>
 										<button class="btn btn--orange-outline">В корзину</button>
 									</div>
 								</div>
@@ -302,6 +335,73 @@
 				          </div>
 				        </div>
 				      </div>
+
+
+							<h3>Товары категории</h3>
+							<div class="owl-carousel product-carousel">
+								<div class="offers__card">
+									<div class="offers__card-wrap">
+										<div class="offers__card-label red">Акция</div>
+										<div class="offers__card-img">
+											<img src="img/offers-card-demo-image.jpg" width="350" height="500" alt="">
+										</div>
+										<div class="offers__card-name">
+											Газовый настенный котел BAXI ECO-compact 24F BAXI ECO-compact 24F
+										</div>
+										<div class="offers__card-vendor">Артикул: <span>15631716</span></div>
+										<div class="offers__card-cost">
+											33,800 <span>р <span class="amount">шт</span></span>
+										</div>
+										<button class="btn offers__card-btn">В корзину</button>
+									</div>
+								</div>
+								<div class="offers__card">
+									<div class="offers__card-wrap">
+										<div class="offers__card-label red">Акция</div>
+										<div class="offers__card-img">
+											<img src="img/offers-card-demo-image.jpg" width="350" height="500" alt="">
+										</div>
+										<div class="offers__card-name">
+											Газовый настенный котел BAXI ECO-compact 24F BAXI ECO-compact 24F
+										</div>
+										<div class="offers__card-vendor">Артикул: <span>15631716</span></div>
+										<div class="offers__card-cost">
+											33,800 <span>р <span class="amount">шт</span></span>
+										</div>
+										<button class="btn offers__card-btn">В корзину</button>
+									</div>
+								</div>
+								<div class="offers__card">
+									<div class="offers__card-wrap">
+										<div class="offers__card-img">
+											<img src="img/offers-card-demo-image.jpg" width="350" height="500" alt="">
+										</div>
+										<div class="offers__card-name">
+											Газовый настенный котел BAXI ECO-compact 24F BAXI ECO-compact 24F
+										</div>
+										<div class="offers__card-vendor">Артикул: <span>15631716</span></div>
+										<div class="offers__card-cost">
+											33,800 <span>р <span class="amount">шт</span></span>
+										</div>
+										<button class="btn offers__card-btn">В корзину</button>
+									</div>
+								</div>
+								<div class="offers__card">
+									<div class="offers__card-wrap">
+										<div class="offers__card-img">
+											<img src="img/offers-card-demo-image.jpg" width="350" height="500" alt="">
+										</div>
+										<div class="offers__card-name">
+											Газовый настенный котел BAXI ECO-compact 24F BAXI ECO-compact 24F
+										</div>
+										<div class="offers__card-vendor">Артикул: <span>15631716</span></div>
+										<div class="offers__card-cost">
+											33,800 <span>р <span class="amount">шт</span></span>
+										</div>
+										<button class="btn offers__card-btn">В корзину</button>
+									</div>
+								</div>
+							</div>
 
 						</div>
 
